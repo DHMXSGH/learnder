@@ -1,6 +1,6 @@
 # Auto Rigger（自动装配）
 
-**AutoRigger** ，自动装配 IK，实际上并不是自动的（ 仍然需要你进行一些细微调整。Auto Rigger 是一个非常方便的 IK RIG 自制脚本，如果你不知道什么是 IK RIG 请点击 [这里](/guide/basics/rig.md#ik-rig-反向动力骨架)。
+**AutoRigger** ，自动装配 IK，实际上并不是自动的（ 仍然需要你进行一些细微调整。Auto Rigger 是一个非常方便的 IK RIG 自制脚本，如果你不知道什么是 IK RIG 请点击 [这里](/guide/sfm/basics/rig.md#ik-rig-反向动力骨架)。
 
 十分推荐新手使用这个脚本以提高制作速度。
 

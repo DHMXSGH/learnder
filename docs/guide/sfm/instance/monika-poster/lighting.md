@@ -165,13 +165,13 @@ SFM 的打光和渲染并不算优秀，除此之外模型的质量也会严重�
 
 - 右图示例默认开启最大，可以看到阴影并没有延伸到脚下，看起来十分奇怪。
 
-- 绝大多数情况下不会用到该功能，除非你想减少小物件上的阴影，但我们已经有 [Shadow Filter](/instance/Poster/lighting.html#_5-shadow-filtersize) 了。
+- 绝大多数情况下不会用到该功能，除非你想减少小物件上的阴影，但我们已经有 [Shadow Filter](/guide/sfm/instance/monika-poster/lighting.html#_5-shadow-filtersize) 了。
 
 ### 11-Far Zatten
 
 ![](https://pic.downk.cc/item/5ec2277ac2a9a83be532288d.png)
 
-- 注意不要与 [Maxdistance](/instance/Poster/lighting.html#_7-mindistance-maxdistance) 混淆。
+- 注意不要与 [Maxdistance](/guide/sfm/instance/monika-poster/lighting.html#_7-mindistance-maxdistance) 混淆。
 
 - 如果把 Mindistance & Maxdistance 参数比作一个调整棱台容器的参数，那 Far Zatten 则代表我们具体往这个容器里加多少水。
 
@@ -181,7 +181,7 @@ SFM 的打光和渲染并不算优秀，除此之外模型的质量也会严重�
 
 ![](https://pic.downk.cc/item/5ec22a0dc2a9a83be53586c7.png)
 
-- 在 Element Viewer 开启 Uber Light 后，你的 Shadow Frustrum 也会发生变化。（[点击这里回看开启方式](/instance/Poster/lighting.html#对照图)）
+- 在 Element Viewer 开启 Uber Light 后，你的 Shadow Frustrum 也会发生变化。（[点击这里回看开启方式](/guide/sfm/instance/monika-poster/lighting.html#对照图)）
 
 - Uber Light 编辑器包括：
   - nearEdge（两个内部红色圆圈之间的距离）
@@ -459,7 +459,7 @@ Uber Light 配合 Gobo Textures 可以创造多种多样的遮光效果。
 
 - 这盏负责模拟室内拉起警报后的效果
 
-- 通过调整 [Min Distancse](/instance/Poster/lighting.html#_7-mindistance-maxdistance) 改变灯光实际产生出光影效果的范围使人物避免受红光影响。
+- 通过调整 [Min Distancse](/guide/sfm/instance/monika-poster/lighting.html#_7-mindistance-maxdistance) 改变灯光实际产生出光影效果的范围使人物避免受红光影响。
 
 :::tip
 如果不改变 Min Distancse，则人物和情报箱上会产生红光，会影响之后主人物打光影子的效果，个人习惯避开人物。

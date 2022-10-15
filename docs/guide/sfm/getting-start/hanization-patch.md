@@ -6,7 +6,7 @@
 
 ::: warning 注意
 使用汉化补丁会导致**窗口布局全部消失**（灰屏）和**创意工坊订阅文件找不到**等问题。
-你可以点击 [这里](/guide/bug/hanization-patch-bug.md) 查看解决方法！
+你可以点击 [这里](/guide/sfm/bug/hanization-patch-bug.md) 查看解决方法！
 :::
 
 ## 获取补丁
