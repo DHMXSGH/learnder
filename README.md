@@ -9,6 +9,8 @@
 - 🐳 开放式的文档，任何人都可以在线阅读和编辑并提交
 - 🍱 提供社区支持，欢迎提出意见和建议，我们将立即回复
 
+![Alt](https://repobeats.axiom.co/api/embed/e15c9ba6c43638ffad2ca79ffba91c175773daf4.svg "Repobeats analytics image")
+
 ## License
 
 [MIT](./LICENSE)
