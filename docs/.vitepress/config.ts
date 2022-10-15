@@ -44,9 +44,9 @@ export default defineConfig({
     ],
 
     algolia: {
-      appId: 'BH4D9OD16A',
-      apiKey: '37ab96e3f5a774cbbf0571b035b42adb',
-      indexName: 'artalk-js',
+      appId: 'PBW2PP7F1D',
+      apiKey: '174b0e89131dc13ba9ec9d47473e5b92',
+      indexName: 'learnder',
       searchParameters: {
         facetFilters: ['lang:zh-CN']
       }
