@@ -21,7 +21,7 @@ next: frontend/install.md
 
 在你尝试获得社区成员的帮助前，请先准备好远程控制软件 [Todesk](https://todesk.com/)，以便可以第一时间获得远程支援。
 
-我们作为开源精神的推崇者以及实践者，希望我们所创造的知识产物，都应该被自由的使用，自由的研究，自由的更改和自由的分享。本文档原始仓库使用 [MIT](https://choosealicense.com/licenses/mit/) 协议开源，本文档请遵循知识共享许可协议 ([Creative Commons License](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh))。
+我们作为开源精神的推崇者以及实践者，希望我们所创造的知识产物，都应该被自由的使用，自由的研究，自由的更改和自由的分享。本文档原始仓库使用 [MIT](https://choosealicense.com/licenses/mit/) 协议开源，本文档遵循知识共享许可协议 ([Creative Commons License](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh))。
 
 ::: tip 立即为社区贡献力量？
 
