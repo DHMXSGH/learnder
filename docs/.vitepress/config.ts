@@ -98,6 +98,7 @@ function sidebarBlender() {
       collapsible: true,
       items: [
         { text: '引言', link: '/guide/blender/intro' },
+        { text: 'Blender 视频教程推荐', link: '/guide/blender/basics/blender-video-tutorials-recommended' },
         //{ text: 'EEVEE 设置', link: '/guide/blender/basics/eevee-setting' },
       ]
     },
