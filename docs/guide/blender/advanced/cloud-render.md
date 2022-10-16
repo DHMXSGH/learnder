@@ -11,6 +11,16 @@ lang: zh-CN
 
 因为操作涉及到纯命令行界面和 Linux 服务器，为了照顾萌新，本指南将会保姆级编写，不同平台的使用方法会导致重复性内容较多。
 
+::: info 参考资料
+
+你可以查阅以下补充资料：
+
+ - 命令行参数（前往 [Blender Manual](https://docs.blender.org/manual/zh-hans/latest/advanced/command_line/arguments.html) 查阅）
+ - 命令行渲染（前往 [Blender Manual](https://docs.blender.org/manual/zh-hans/latest/advanced/command_line/render.html) 查阅）
+ - 打包数据（前往 [Blender Manual](https://docs.blender.org/manual/zh-hans/dev/files/blend/packed_data.html) 查阅）
+ 
+:::
+
 ## 百度飞桨 AI Studio（白嫖）
 
 百度飞桨 AI Studio 是百度推出的一个免费的 AI 学习平台，提供了免费的 GPU 服务器，可以用于云渲染，提供了以下 5款配置：
@@ -120,7 +130,7 @@ mv blender-3.3.1-linux-x64 blender
 ![](https://pic1.imgdb.cn/item/634ac05616f2c2beb1c7fce9.jpg)
 
 
-上传你的 Blender 工程，如果你的工程文件大于或等于 150MB，你需要上传到第三方允许直链的平台，比如任意对象存储、[钛盘](https://tmp.link/)、[Catbox](catbox.moe) 等。
+上传你已经 [打包](https://docs.blender.org/manual/zh-hans/dev/files/blend/packed_data.html) 好或资产已经就绪的 Blender 工程，如果你的工程文件大于或等于 150MB，你需要上传到第三方允许直链的平台，比如任意对象存储、[钛盘](https://tmp.link/)、[Catbox](catbox.moe) 等。
 
 #### 渲染项目
 
@@ -138,11 +148,18 @@ cd blender
 ./blender -b 项目名.blend -E 'CYCLES' -o "./Render/" -s 1 -e 250 -a -- --cycles-device OPTIX
 ```
 
-- 以 `Cycles` 渲染引擎 `CUDA` 硬件加速，渲染 `test.blend` 项目中的第 `9` 帧以 `PNG` 格式输出到 Blender 主目录下的 `Output` 文件夹。
+- 以 `Cycles` 渲染引擎 `CUDA` 硬件加速，渲染 `/home/aistudio/test.blend` 项目中的第 `9` 帧以 `PNG` 格式输出到 Blender 主目录下的 `Output` 文件夹。
 
 ```bash
-./blender -b test.blend -E 'CYCLES' -o "./Output/" -f 9 -F 'PNG' -- --cycles-device CUDA
+./blender -b /home/aistudio/test.blend -E 'CYCLES' -o "./Output/" -f 9 -F 'PNG' -- --cycles-device CUDA
 ```
+
+::: tip 提示
+
+- 百度 AI Studio 的主目录路径是 `/home/aistudio/`，你可以通过在终端输入 `pwd` 查看当前路径。
+- OPTIX 硬件加速因驱动版本限制，可能会无法正常工作，请尝试使用 CUDA 硬件加速。
+
+:::
 
 #### 渲染成品下载
 
