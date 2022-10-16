@@ -1,7 +1,3 @@
----
-next: frontend/install.md
----
-
 # <span class="wave">👋</span> 你好哦
 
 **Learnder** 是一个公益的开源项目，为公众提供 3D 内容学习、创作的自学文档。
