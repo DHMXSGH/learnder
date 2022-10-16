@@ -9,6 +9,7 @@ export default defineConfig({
   title: 'Learnder',
   description: '知识分享库',
   lang: 'zh-CN',
+  cleanUrls: 'with-subfolders',
 
   head: [
     ['link', { rel: 'icon', href: '/favicon.png' }],
@@ -27,6 +28,11 @@ export default defineConfig({
 
   themeConfig: {
     logo: '/logo-hero.png',
+    lastUpdatedText: '最后更新时间',
+
+    outline: 'deep',
+    outlineTitle: '指南大纲',
+
     nav: nav(),
 
     sidebar: {
@@ -135,7 +141,7 @@ function sidebarSFM() {
       items: [
         { text: '基础打光', link: '/guide/sfm/basics/lighting' },
         { text: 'Rig', link: '/guide/sfm/basics/rig' },
-        { text: '导出成片', link: '/guide/sfm/basics/export' }
+        //{ text: '导出成片', link: '/guide/sfm/basics/export' }
       ]
     },
     {
