@@ -23,7 +23,7 @@ lang: zh-CN
 
 ## 百度飞桨 AI Studio（白嫖）
 
-百度飞桨 AI Studio 是百度推出的一个免费的 AI 学习平台，提供了免费的 GPU 服务器，可以用于云渲染，提供了以下 5款配置：
+[百度飞桨 AI Studio](https://aistudio.baidu.com/aistudio/newbie?invitation=1&sharedUserId=2657741&sharedUserName=Loudomian) 是百度推出的一个免费的 AI 学习平台，提供了免费的 GPU 服务器，可以用于云渲染，提供了以下 5款配置：
 
 | 名称        | GPU          | 显存     | CPU核心数 | 内存    | 硬盘    | 费用      |
 |:---------:|:------------:|:------:|:------:|:-----:|:-----:|:-------:|
@@ -116,7 +116,7 @@ https://www.blender.org/download/release/Blender3.3/blender-3.3.1-linux-x64.tar.
 输入以下命令解压 Blender，也可以通过右键左侧的压缩文件进行解压。
 
 ```bash
-tar -xf blender-3.3.1-linux-x64.tar.xz
+tar xf blender-3.3.1-linux-x64.tar.xz
 ```
 
 ![](https://pic1.imgdb.cn/item/634abfb516f2c2beb1c6b934.jpg)
@@ -166,3 +166,123 @@ cd blender
 渲染结束后，你可以通过在 Blender 主目录中寻找之前设置好的输出文件夹，双击可以进行预览，右键可以下载或者打包文件夹下载。
 
 ![](https://pic1.imgdb.cn/item/634ad63a16f2c2beb1f442b0.jpg)
+
+## AutoDL（付费，但廉价）
+
+[AutoDL](https://www.autodl.com/register?code=12ce68b5-80d3-41a5-80f7-bc3ed18c60a0) 是市面上少有的极为廉价的 GPU 租用服务提供商。注册即送 10 元代金卷，可以快乐白嫖顶级显卡好几小时，对于学生用户，还能有 95 折优惠。
+
+我个人十分推荐使用这家的服务器进行渲染，优点如下：
+
+- 多地区、多显卡，可自由搭配配置。
+- 有内部云盘，可以事先上传好 Blender 本体和工程文件。
+- 有镜像保存功能，可以保存你预先配置好的渲染环境，让每一台新开的服务器都能开箱即用。
+- 关机不计算费用，能无卡模式启用，且费用低廉。
+
+不足之处估计就只有一点了：**要钱**。
+
+### 渲染你的项目
+
+#### 上传工程文件
+
+你可以事先将 Blender 本体和工程文件上传到 AutoDL 的内部云盘，这个内部云盘可以直接在同区域的所有服务器上使用。
+
+请确定你上传的区域是你想要租用服务器的区域，因为内部云盘无法跨区域使用。
+
+![](https://pic1.imgdb.cn/item/634c5f8716f2c2beb121633c.jpg)
+
+#### 选择配置和启用环境
+
+在这里，我选择了一台 Tesla A100，环境是 Ubuntu 20.04，多数情况下，只要考虑硬件配置，运行环境任意即可。
+
+![](https://pic1.imgdb.cn/item/634c5e6816f2c2beb120a138.jpg)
+
+接着，进入**我的实例**页面，点击 JupyterLab 进入这个无比好用的交互式的开发环境。
+
+![](https://pic1.imgdb.cn/item/634c60bf16f2c2beb1221e40.jpg)
+
+::: tip 提示
+
+虽然 AutoDL 提供 SSH 登录方式来访问服务器，但这并不适合于渲染和炼丹这种**高危**操作，一旦 SSH 断开，没有做好 Screen 之类的操作，渲染就会被强制终止。
+
+而 JupyterLab 则是一个完全的 Web 环境，即使你对 AutoDL 的网络断开，渲染也不会被强制终止，因为所有的操作都在服务器上进行。
+
+:::
+
+#### 配置渲染环境
+
+假如你没有事先上传 Blender 本体，你可以在 JupyterLab 的终端中直接下载 Blender 本体，你实现上传的 Blender 工程文件将储存在 `autodl-nas` 文件夹里，请复制到主目录下。
+
+你可以通过在 [blender.org](https://www.blender.org/download/) 获取最新的 Linux 版本的 Blender 本体。
+
+也可以通过输入下方命令下载 Blender 3.3.1，若想更换版本，请自行修改链接中的版本号
+
+- 伯克利加州大学镜像（最快）
+
+```bash
+wget https://mirrors.ocf.berkeley.edu/blender/release/Blender3.3/blender-3.3.1-linux-x64.tar.xz --no-check-certificate
+```
+
+- 阿里云镜像（可能会限速）
+
+```bash
+wget https://mirrors.aliyun.com/blender/release/Blender3.3/blender-3.3.1-linux-x64.tar.xz --no-check-certificate
+```
+
+- 官网原版（荷兰卡炸）
+
+```bash
+https://www.blender.org/download/release/Blender3.3/blender-3.3.1-linux-x64.tar.xz/ --no-check-certificate
+```
+
+![](https://pic1.imgdb.cn/item/634c626916f2c2beb1232572.jpg)
+
+输入以下命令解压 Blender。
+
+```bash
+tar xf blender-3.3.1-linux-x64.tar.xz
+```
+
+为了方便操作，继续输入以下命令重命名 Blender 文件夹，你也可以通过右键文件夹改名。
+
+```bash
+mv blender-3.3.1-linux-x64 blender
+```
+
+#### 渲染项目
+
+通过以下命令进入 Blender 的主目录：
+
+```bash
+cd blender
+```
+
+然后输入渲染命令：
+
+- 以 `Cycles` 渲染引擎 `OPTIX` 硬件加速，渲染 `项目名.blend` 项目中的 `1-250` 帧到 Blender 主目录下的 `Render` 文件夹。
+
+```bash
+./blender -b 项目名.blend -E 'CYCLES' -o "./Render/" -s 1 -e 250 -a -- --cycles-device OPTIX
+```
+
+- 以 `Cycles` 渲染引擎 `OPTIX` 硬件加速，渲染 `/root/test.blend` 项目中的第 `9` 帧以 `PNG` 格式输出到 Blender 主目录下的 `Output` 文件夹。
+
+```bash
+./blender -b /root/test.blend -E 'CYCLES' -o "./Output/" -f 9 -F 'PNG' -- --cycles-device OPTIX
+```
+
+::: tip 提示
+
+- AutoDL 的主目录路径是 `/root/`，你可以通过在终端输入 `pwd` 查看当前路径。
+- 在较新的显卡环境下，`OPTIX` 硬件加速会让渲染效率更高，如果出现问题或不支持这个加速方式，你可以选择使用 `CUDA` 硬件加速。
+
+:::
+
+#### 渲染成品下载
+
+你可以简单地通过右键下载单个文件，也可以通过以下命令打包整个文件夹进行下载。
+
+```bash
+tar -cvf Output.tar.gz /root/blender/Output
+```
+
+![](https://pic1.imgdb.cn/item/634c64ec16f2c2beb126af52.jpg)
