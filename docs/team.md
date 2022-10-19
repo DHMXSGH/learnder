@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 来认识下文档作者
+title: 认识下文档作者
 description: 来自五湖四海各行各业的作者们
 ---
 
@@ -16,7 +16,7 @@ import { core } from './_data/team'
 
 <VPTeamPage>
   <VPTeamPageTitle>
-    <template #title>来认识下文档贡献者</template>
+    <template #title>认识下文档贡献者</template>
     <template #lead>
       来自五湖四海各行各业的作者们
     </template>
