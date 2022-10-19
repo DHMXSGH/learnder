@@ -13,14 +13,14 @@ hero:
     alt: Learnder
   actions:
     - theme: brand
-      text: 了解更多
-      link: /about
-    - theme: alt
+      text: 查阅 Blender 文档
+      link: /guide/blender/intro
+    - theme: brand
       text: 查阅 SFM 文档
       link: /guide/sfm/intro
     - theme: alt
-      text: 查阅 Blender 文档
-      link: /guide/blender/intro
+      text: 关于本站
+      link: /about
 
 features:
   - icon: 🍃
