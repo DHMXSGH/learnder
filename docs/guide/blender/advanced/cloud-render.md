@@ -23,6 +23,8 @@ lang: zh-CN
 
 ## 百度飞桨 AI Studio（白嫖）
 
+![](https://pic1.imgdb.cn/item/634c691816f2c2beb129801c.jpg)
+
 [百度飞桨 AI Studio](https://aistudio.baidu.com/aistudio/newbie?invitation=1&sharedUserId=2657741&sharedUserName=Loudomian) 是百度推出的一个免费的 AI 学习平台，提供了免费的 GPU 服务器，可以用于云渲染，提供了以下 5款配置：
 
 | 名称        | GPU          | 显存     | CPU核心数 | 内存    | 硬盘    | 费用      |
@@ -168,6 +170,8 @@ cd blender
 ![](https://pic1.imgdb.cn/item/634ad63a16f2c2beb1f442b0.jpg)
 
 ## AutoDL（付费，但廉价）
+
+![](https://pic1.imgdb.cn/item/634c688716f2c2beb129287c.jpg)
 
 [AutoDL](https://www.autodl.com/register?code=12ce68b5-80d3-41a5-80f7-bc3ed18c60a0) 是市面上少有的极为廉价的 GPU 租用服务提供商。注册即送 10 元代金卷，可以快乐白嫖顶级显卡好几小时，对于学生用户，还能有 95 折优惠。
 
