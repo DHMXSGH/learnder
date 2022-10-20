@@ -163,6 +163,11 @@
 }
 
 ::-webkit-scrollbar-thumb{
+  background-color: #535664;
+  border-radius: 2px;
+}
+
+.dark ::-webkit-scrollbar-thumb{
   background-color: var(--vp-c-divider);
   border-radius: 2px;
 }
