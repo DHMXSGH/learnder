@@ -107,7 +107,8 @@ function sidebarBlender() {
       text: '📚进阶',
       collapsible: true,
       items: [
-        { text: '服务器云渲染', link: '/guide/blender/advanced/cloud-render' }
+        { text: '服务器云渲染', link: '/guide/blender/advanced/cloud-render' },
+        { text: '提取守望先锋资产', link: '/guide/blender/advanced/extract-overwatch-assets' },
       ]
     }
   ]
