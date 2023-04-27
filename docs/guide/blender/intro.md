@@ -12,7 +12,7 @@
 
 <div class="video-block">
 <video width="1280" height="720" autoplay muted loop playsinline style="object-fit: cover;">
-  <source src="https://assets.007.rip/video/Project Heist - Blender Studio.mp4" type="video/mp4">
+  <source src="https://cdn.learnder.org/video/Project Heist - Blender Studio.mp4" type="video/mp4">
 你的浏览器无法播放视频。
 </video>
 </div>
