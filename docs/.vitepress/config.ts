@@ -22,7 +22,7 @@ export default defineConfig({
     ['meta', { property: 'og:description', content: ogDescription }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:site', content: '@vite_js' }],
-    ['script', { src: 'https://umm.007.rip/umami.js', async: true, defer: true, 'data-website-id': 'd8d8bb05-56be-4f37-a4e0-64cc9a0c800a' }],
+    ['script', { src: 'https://umm.learnder.org/script.js', async: true, defer: true, 'data-website-id': 'd8d8bb05-56be-4f37-a4e0-64cc9a0c800a' }],
   ],
 
   lastUpdated: true,
