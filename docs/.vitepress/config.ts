@@ -30,6 +30,9 @@ export default defineConfig({
   themeConfig: {
     logo: '/logo-hero.png',
     lastUpdatedText: '最后更新时间',
+    search: {
+      provider: 'local'
+    },
 
     outline: 'deep',
     outlineTitle: '指南大纲',
@@ -42,22 +45,13 @@ export default defineConfig({
     },
 
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2019 - 2022 Loudomian.'
+      message: 'Released under the MIT License, Powered by <a href="https://cloudflare.com">Cloudflare</a>.',
+      copyright: 'Copyright © 2019 - 2023 Loudomian.'
     },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Loudomian/learnder' },
     ],
-
-    algolia: {
-      appId: 'PBW2PP7F1D',
-      apiKey: '174b0e89131dc13ba9ec9d47473e5b92',
-      indexName: 'learnder',
-      searchParameters: {
-        facetFilters: ['lang:zh-CN']
-      }
-    },
 
     editLink: {
       pattern: 'https://github.com/Loudomian/learnder/edit/main/docs/:path',
