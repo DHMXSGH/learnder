@@ -179,7 +179,8 @@ function sidebarSFM() {
         { text: '汉化补丁', link: '/guide/sfm/bug/hanization-patch-bug' },
         { text: '七彩眩光', link: '/guide/sfm/bug/7-color' },
         { text: '文档损坏', link: '/guide/sfm/bug/document-broke' },
-        { text: '屏闪后崩溃', link: '/guide/sfm/bug/crash-after-flash' }
+        { text: '屏闪后崩溃', link: '/guide/sfm/bug/crash-after-flash' },
+        { text: 'CUtlRBTree overflow', link: '/guide/sfm/bug/cutlrbtree-overflow' }
       ]
     }
   ]
