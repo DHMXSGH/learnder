@@ -23,3 +23,5 @@
 [点击这里一键切换 Blender 文档](/guide/blender/intro)
 
 ![还在用？](https://pic.imgdb.cn/item/61bcc3a42ab3f51d91b36958.jpg)
+
+![](https://pic.imgdb.cn/item/64e42e76661c6c8e54a20753.jpg)
