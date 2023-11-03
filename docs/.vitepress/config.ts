@@ -82,7 +82,7 @@ function nav() {
       activeMatch: '/guide/'
     },
     { text: '创作者', link: '/team', activeMatch: '/team' },
-    { text: '网站导航', link: 'https://nav.learnder.org' }
+    { text: '网站导航', link: 'https://nav.learnder.org' },
     { text: '通过BMC赞助', link: 'https://www.buymeacoffee.com/mojito' }
   ]
 }
